@@ -29,6 +29,7 @@ def login():
         return redirect('/index')
     return render_template('login.html', title='Sign In', form=form)
 
+
 ''' 
 render_template() function invokes the Jinja2 template engine that 
 comes bundled with the Flask framework. Jinja2 substitutes {{ ... }} 
