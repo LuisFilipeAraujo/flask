@@ -3,8 +3,8 @@
 {% block content %}
     <h1>Welcome to PetVale, {{ user.username }}!</h1>
     <h1>The best place to take care of your Pet!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.username }} has a: <b>{{ post.body }}</b></p></div>
+    {% for post in owners_list %}
+    <div><p>{{ post.owner.username }} has a: <b>{{ post.body }}</b></p></div>
     {% endfor %}
 {% endblock %}
 

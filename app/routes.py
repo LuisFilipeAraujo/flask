@@ -7,17 +7,17 @@ from app.forms import LoginForm
 @app.route('/index')
 def index():
     user = {'username': 'Luis'}
-    posts = [
+    owners_list = [
         {
-            'author': {'username': 'Michael'},
+            'owner': {'username': 'Michael'},
             'body': 'Husky'
         },
         {
-            'author': {'username': 'Jocelin'},
+            'owner': {'username': 'Jocelin'},
             'body': 'Poodle'
         }
     ]
-    return render_template('index.html', title='Home', user=user, posts=posts)
+    return render_template('index.html', title='Home', user=user, owners_list=owners_list)
 
 
 @app.route('/login', methods=['GET', 'POST'])
